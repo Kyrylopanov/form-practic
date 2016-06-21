@@ -1,0 +1,166 @@
+html, body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #371860;
+    font-size: 14px;
+}
+
+.container-left {
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    float:left;
+    padding: 40px 47px;
+}
+
+h1 {
+   font-size: 34px; 
+}
+
+p {
+   text-align: justify;
+    
+}
+
+
+.container-right{
+    width: 1500px;
+    height: 400px;     
+}
+
+.container-radio {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.radio {
+    display: inline-block;
+    padding: 0 4px;
+}
+.label-radio {
+    margin: 95px 425px;
+    position: absolute;
+    width: 980px;
+}
+
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+.styled-select {
+   width: 268px;
+   height: 34px;
+   overflow: hidden;
+   background: url('../images/selector.png') no-repeat right #fff;
+   border: 1px solid #ccc;
+   }
+
+.styled-select2 select {
+   background: transparent;
+   width: 140px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+
+.styled-select2 {
+   width: 140px;
+   height: 34px;
+   overflow: hidden;
+   background: url('../images/selector.png') no-repeat right #fff;
+   border: 1px solid #ccc;
+   }
+
+
+.styled-select3 {
+   height: 34px;
+   overflow: hidden;
+   background: #fff;
+   border: 1px solid #ccc;
+   }
+
+
+.rent {
+    display: inline-block;
+}
+
+.city {
+    display: inline-block;
+}
+
+.bla {
+    color: grey;
+}
+
+.people {
+    display: inline-block;
+}
+
+.location {
+    display: inline-block;
+}
+
+.text-location {
+    width: 395px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    display:inline-block;
+    font-size: 14px;
+}
+.some-text {
+    width: 540px;
+}
+
+.pvz {
+    color: grey;
+    margin: 0 146px;
+    
+}
+
+.description {
+    overflow: hidden;
+    font-size: 14px;
+}
+
+textarea {
+    width: 541px;
+    height: 100px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: none;
+}
+
+#map {
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin-top: 0;
+}
+
+input[type="submit"], input[type="reset"] {
+    background: #FDE74C;
+    border: 0;
+    width: 100px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
