@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+    <META charset="utf-8">
+	<TITLE>Practical assigment</TITLE>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    
+   	
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="./js/jquery-2.2.3.js"></script>
+        <script src="https://cdn.rawgit.com/t4t5/sweetalert/master/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/t4t5/sweetalert/master/dist/sweetalert.css">
+	
+
+	
+</HEAD>
+    
+<BODY>
+    <div class="container-left">
+        <h1>PRIDĖK <br> APGYVENDINIMĄ</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+    <div class="container-right">
+        
+     <form form action="#" method="post" name="form_name" id="form_id">
+        
+        <div class="label-radio">
+            <lable>Apgyvendinimas skirtas:</lable>
+            <div class="container-radio" id="nation">
+                <div class="radio">
+                    <input type="radio" name="nationality" value="all">Visiems
+                </div>
+                <div class="radio">
+                    <input type="radio" name="nationality" value="lithuanians">Lietuviams
+                </div>
+                <div class="radio">
+                    <input type="radio" name="nationality" value="foregn">Užsieniečiams
+                </div>
+            </div>
+            <hr>
+            
+        
+            <div class="rent">
+               
+                <lable>For rent</lable>
+                <br>
+                <div class="styled-select">
+                    <select id="select-prop">
+                        <option data-foo="Room">Room</option>
+                        <option data-foo="Apartment">Apartment</option>
+                        <option data-foo="House">House</option>
+                    </select>
+                </div>
+            </div>
+             <div class="city">
+               
+                <lable>City</lable>
+                <br>
+                <div class="styled-select">
+                    <select id="select-city">
+                        <option data-foo="Vilnius">Vilnius</option>
+                        <option data-foo="Kaunas">Kaunas</option>
+                        <option data-foo="Klaipėda">Klaipėda</option>
+                        <option data-foo="Šiauliai">Šiauliai</option>
+                        <option data-foo="Panevėžys">Panevėžys</option>
+                    </select>
+                </div>
+            </div>
+                    <div id="map"></div>
+
+            <div class="some-text">
+                <p class="bla">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua.</p>
+            </div>
+             <div class="people">
+               
+                <lable>Max occupancy</lable>
+                <br>
+                <div class="styled-select2">
+                    <select id="select-occup">
+                        <option value="" disabled selected>select</option>
+                        <option data-foo="1">1</option>
+                        <option data-foo="2">2</option>
+                        <option data-foo="3-4">3-4</option>
+                        <option data-foo="5-7">5-7</option>
+                        <option data-foo="8-12">8-12</option>
+                    </select>
+                </div>
+            </div>
+            <div class="location">
+               
+                <lable>Location</lable>
+                <br>
+                <div class="styled-select3">
+                    <input type="text" name="location" id="location" class="text-location">
+                </div>
+                
+            </div>
+            
+            <div>
+                <p class="pvz">pvz. Žalgirio 110 Vilnius</p>
+            </div>
+            
+             <div class="description">
+               
+                <lable>Descriprion:</lable>
+                <br>
+                <div>
+                    <textarea name="description" id="description" placeholder="Please, enter a description"></textarea>
+
+                </div>
+                 <div class="container-btn" >
+                    <input type="submit" name="submit_id" id="btn_id" value="Išsaugoti" style="width:130px" >
+                    <input type="reset" value="Atšaukti">
+                </div>
+            </div> 
+           
+        </form>
+            
+        </div>
+        
+        
+        
+        
+    </div>
+    
+    
+    
+   
+
+	<script src="./js/app.js"></script>
+    
+</BODY>
+</HTML>
