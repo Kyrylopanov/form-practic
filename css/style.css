@@ -151,6 +151,7 @@ textarea {
     height: 300px;
     float: right;
     margin-top: 0;
+    color: black;
 }
 
 input[type="submit"], input[type="reset"] {
