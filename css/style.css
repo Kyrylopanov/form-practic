@@ -154,7 +154,7 @@ textarea {
     color: black;
 }
 
-input[type="submit"], input[type="reset"] {
+input[type="button"], input[type="reset"] {
     background: #FDE74C;
     border: 0;
     width: 100px;
@@ -162,6 +162,7 @@ input[type="submit"], input[type="reset"] {
     font-weight: bold;
     cursor: pointer;
 }
+
 
 
 
