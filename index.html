@@ -18,13 +18,13 @@
     </div>
     <div class="container-right">
         
-     <form form action="#" method="post" name="form_name" id="form_id">
+     <form action="#" method="get" name="form_name" id="form_id">
         
-        <div class="label-radio">
+        <div class="label-radio" id="signup">
             <lable>Apgyvendinimas skirtas:</lable>
             <div class="container-radio" id="nation">
                 <div class="radio">
-                    <input type="radio" name="nationality" value="all">Visiems
+                    <input type="radio" name="nationality" value="all" checked>Visiems
                 </div>
                 <div class="radio">
                     <input type="radio" name="nationality" value="lithuanians">Lietuviams
@@ -33,6 +33,7 @@
                     <input type="radio" name="nationality" value="foregn">Užsieniečiams
                 </div>
             </div>
+         
             <hr>
             
         
@@ -87,7 +88,7 @@
                 <lable>Location</lable>
                 <br>
                 <div class="styled-select3">
-                    <input type="text" name="location" id="location" class="text-location">
+                    <input type="text" name="location" id="location" class="text-location" value="Vilnius">
                 </div>
                 
             </div>
@@ -105,8 +106,8 @@
 
                 </div>
                  <div class="container-btn" >
-                    <input type="submit" name="submit_id" id="btn_id" value="Išsaugoti" style="width:130px" >
-                    <input type="reset" value="Atšaukti">
+                     <input type="button" name="submit_id" id="btn_id" value="Išsaugoti" style="width:130px" >
+                     <input type="reset" value="Atšaukti">
                 </div>
             </div> 
            
