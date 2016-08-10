@@ -1,5 +1,5 @@
-      //Google Maps find place
-
+//Google Maps find place
+var googleCity;
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 54.686494, lng: 25.276221},
@@ -52,6 +52,7 @@
               (place.address_components[1] && place.address_components[1].short_name || ''),
               (place.address_components[2] && place.address_components[2].short_name || '')
             ].join(' ');
+              
           }
 
           infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
@@ -71,44 +72,65 @@
         setupClickListener('changetype-address', ['address']);
         setupClickListener('changetype-establishment', ['establishment']);
         setupClickListener('changetype-geocode', ['geocode']);
-      }
+      } // End Google Maps
 
 
 
 
 $(document).ready(function() {
-// Submit form with id function.
-$("#btn_id").click(function() {
-var nation = $("#nation input").val();
-var prop = $("#select-prop").val();
-var location = $("#location").val();
-var maxOcc = $("#select-occup").val();
-var city = $("#select-city").val();
-if (validation()) // Calling validation function.
-{
-$("#form_id").submit(); // Form submission.
-alert("\n Accomodation for : " + nation + "\n\n For rent : " + prop + "\n\n City : " + city + " \n\n Maximum Occupancy : " + maxOcc + "\n\n Location : " + location + "\n\n Thank you! Your Form Submitted Successfully......");
-}
-});
-
-
-
-// Name and description validation Function.
-function validation() {
-var nation = $("#nation input").val();
-var prop = $("#select-prop").val();
-var location = $("#location").val();
-var maxOcc = $("#select-occup").val();
-var city = $("#select-city").val();
-var description = $("#description").val();
-if (location === '' || description === '' || maxOcc === null || city === '' || prop === '') {
-alert("Please fill all fields...!!!!!!");
-return false;
-} else {
-return true;
-}
-}
     
+var myArray = []; 
+// Submit form function.
+$("#btn_id").click(function() {
+    
+        
+// Calling validation function.
+if (validation()) 
+    {
+        $.get('server.js', myArray);
+        console.log(myArray);
+    }
+  
 });
+    
+    function validation() {
+        
+    var nation = $("#nation input:checked").val();
+    var prop = $("#select-prop").val();
+    var location = $("#location").val();
+    var maxOcc = $("#select-occup").val();
+    var city = $("#select-city").val();
+    var description = $("#description").val();
+    
+    //Push in array data from form and parse JSON for server
+    myArray = {
+        nation,
+        prop,
+        location,
+        maxOcc,
+        city,
+        description
+    };
+        
+    //Check if all inputs is filled.
+        if (location === '' || description === '' || maxOcc === null || city === '' || prop === '' || location.indexOf(city) < 0 ) {
+            alert("Please fill all fields...!!!!!!");
+        return false;
+            } else {
+                alert("Thank you!");
+                return true;
+            }
+    }
+        
+    
+    
+    //Select City click and type City to input it 
+    $('#select-city').change(function(){
+        
+        $('#location').val($('#select-city').val());
+    });
+
+    
+}); // End ready
 
 
