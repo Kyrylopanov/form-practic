@@ -2,7 +2,7 @@
 <HTML>
 <HEAD>
     <META charset="utf-8">
-	<TITLE>Practical assigment</TITLE>
+	<TITLE>Pridek Apgyvendinima</TITLE>
 	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
     
     <script type="text/javascript" src="./js/jquery-2.2.3.js"></script>
@@ -12,105 +12,113 @@
 </HEAD>
     
 <BODY>
+   <div class="container">
     <div class="container-left">
-        <h1>PRIDĖK <br> APGYVENDINIMĄ</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h1>FIND THE BEST DEALS</h1>
+        <div class="text-section">
+            <p>Vacation rentals often provide more space, privacy and convenience than hotels. Since they’re also available in a wide range of locations, you can stay in both tourist areas and local neighborhoods alike. </p> 
+            <p>
+            This makes vacation rentals a desirable option for large groups, families with children, and travelers seeking to step off the beaten path. </p>
+            <p>
+             So if you’d like to feel ‘home away from home’ on your next trip - in a place where you can cook, lounge and entertain - a vacation rental is for you. </p>
+         </div>
     </div>
     <div class="container-right">
         
-     <form form action="#" method="post" name="form_name" id="form_id">
-        
-        <div class="label-radio">
-            <lable>Apgyvendinimas skirtas:</lable>
-            <div class="container-radio" id="nation">
-                <div class="radio">
-                    <input type="radio" name="nationality" value="all">Visiems
-                </div>
-                <div class="radio">
-                    <input type="radio" name="nationality" value="lithuanians">Lietuviams
-                </div>
-                <div class="radio">
-                    <input type="radio" name="nationality" value="foregn">Užsieniečiams
-                </div>
-            </div>
-            <hr>
-            
-        
-            <div class="rent">
-               
-                <lable>For rent</lable>
-                <br>
-                <div class="styled-select">
-                    <select id="select-prop">
-                        <option data-foo="Room">Room</option>
-                        <option data-foo="Apartment">Apartment</option>
-                        <option data-foo="House">House</option>
-                    </select>
-                </div>
-            </div>
-             <div class="city">
-               
-                <lable>City</lable>
-                <br>
-                <div class="styled-select">
-                    <select id="select-city">
-                        <option data-foo="Vilnius">Vilnius</option>
-                        <option data-foo="Kaunas">Kaunas</option>
-                        <option data-foo="Klaipėda">Klaipėda</option>
-                        <option data-foo="Šiauliai">Šiauliai</option>
-                        <option data-foo="Panevėžys">Panevėžys</option>
-                    </select>
-                </div>
-            </div>
-                    <div id="map"></div>
+         <form action="#" method="get" name="form_name" id="form_id">
 
-            <div class="some-text">
-                <p class="bla">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua.</p>
-            </div>
-             <div class="people">
-               
-                <lable>Max occupancy</lable>
-                <br>
-                <div class="styled-select2">
-                    <select id="select-occup">
-                        <option value="" disabled selected>select</option>
-                        <option data-foo="1">1</option>
-                        <option data-foo="2">2</option>
-                        <option data-foo="3-4">3-4</option>
-                        <option data-foo="5-7">5-7</option>
-                        <option data-foo="8-12">8-12</option>
-                    </select>
+            <div class="label-radio" id="signup">
+                <lable>Accomodation:</lable>
+                <div class="container-radio" id="nation">
+                    <div class="radio">
+                        <input type="radio" name="nationality" value="all" checked>For All
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="nationality" value="lithuanians">For Lithuanians
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="nationality" value="foregn">For Foreigners
+                    </div>
                 </div>
-            </div>
-            <div class="location">
-               
-                <lable>Location</lable>
-                <br>
-                <div class="styled-select3">
-                    <input type="text" name="location" id="location" class="text-location">
+
+                <hr>
+
+
+                <div class="rent">
+
+                    <lable>For rent</lable>
+                    <br>
+                    <div class="styled-select">
+                        <select id="select-prop">
+                            <option data-foo="Room">Room</option>
+                            <option data-foo="Apartment">Apartment</option>
+                            <option data-foo="House">House</option>
+                        </select>
+                    </div>
                 </div>
-                
-            </div>
-            
-            <div>
-                <p class="pvz">pvz. Žalgirio 110 Vilnius</p>
-            </div>
-            
-             <div class="description">
-               
-                <lable>Descriprion:</lable>
-                <br>
+                 <div class="city">
+
+                    <lable>City</lable>
+                    <br>
+                    <div class="styled-select">
+                        <select id="select-city">
+                            <option data-foo="Vilnius">Vilnius</option>
+                            <option data-foo="Kaunas">Kaunas</option>
+                            <option data-foo="Klaipėda">Klaipėda</option>
+                            <option data-foo="Šiauliai">Šiauliai</option>
+                            <option data-foo="Panevėžys">Panevėžys</option>
+                        </select>
+                    </div>
+                </div>
+                        <div id="map"></div>
+
+                <div class="some-text">
+                    <p class="bla">We offer our guests a possibility to enjoy a calm rest or get entertained in cosy rooms at the guest house, and the log houses. The booking in advance is highly recommended..</p>
+                </div>
+                 <div class="people">
+
+                    <lable>Max occupancy</lable>
+                    <br/>
+                    <div class="styled-select2">
+                        <select id="select-occup">
+                            <option value="" disabled selected>select</option>
+                            <option data-foo="1">1</option>
+                            <option data-foo="2">2</option>
+                            <option data-foo="3-4">3-4</option>
+                            <option data-foo="5-7">5-7</option>
+                            <option data-foo="8-12">8-12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="location">
+
+                    <lable>Location</lable>
+                    <br>
+                    <div class="styled-select3">
+                        <input type="text" name="location" id="location" class="text-location" value="Vilnius">
+                    </div>
+
+                </div>
+
                 <div>
-                    <textarea name="description" id="description" placeholder="Please, enter a description"></textarea>
+                    <p class="pvz">e.g. Žalgirio 110 Vilnius</p>
+                </div>
 
-                </div>
-                 <div class="container-btn" >
-                    <input type="submit" name="submit_id" id="btn_id" value="Išsaugoti" style="width:130px" >
-                    <input type="reset" value="Atšaukti">
-                </div>
-            </div> 
-           
-        </form>
+                 <div class="description">
+
+                    <lable>Descriprion:</lable>
+                    <br>
+                    <div>
+                        <textarea name="description" id="description" placeholder="Please, enter a description"></textarea>
+
+                    </div>
+                     <div class="container-btn" >
+                         <input type="button" name="submit_id" id="btn_id" value="Submit" style="width:130px" >
+                         <input type="reset" value="Cancel">
+                    </div>
+                </div> 
+
+            </form>
             
         </div>
         
@@ -118,6 +126,7 @@
         
         
     </div>
+
     
     
     
